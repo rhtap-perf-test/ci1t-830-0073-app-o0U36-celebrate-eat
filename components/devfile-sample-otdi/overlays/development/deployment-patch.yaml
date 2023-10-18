@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-otdi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0073-tenant/ci1t-830-0073-app/devfile-sample-otdi@sha256:1bfc82119539fc50d7f196ef3bb4c5ddc037a3e1e508b44e0d829c7ebeb502ec
+        name: my-nodejs
+        resources: {}
+status: {}
